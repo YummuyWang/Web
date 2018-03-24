@@ -112,7 +112,7 @@
                             <span class="input_note">
                             <a href="javascript:checkNameAbility();">检查可用性</a>
                         </span>
-                            <span id="account_availability" style="display: none;"></span>
+                            <span id="account_availability" style="display: none;">可用！</span>
                         </div>
                         <div style="clear: left;"></div>
                     </div>
@@ -120,13 +120,17 @@
                     <div class="rule"></div>
                     <div class="form_row">
                         <div class="form_area">
-                            <label for="password">请输入密码</label>
+                            <label for="password">请输入密码（最少6位，区分大小写）</label>
                             <input type="password" maxlength="64" name="password" id="password" autocomplete="off">
                         </div>
                         <div class="form_notes">
-                            <div id="password_tag" class="password_tag">&nbsp;</div>
-                            <div style="clear: left;"></div>
+                            <br>
+                            <span class="input_note" id="posswordCheck" style="display: none"></span>
                         </div>
+                        <div class="form_notes">
+                            <div id="password_tag" class="password_tag">&nbsp;</div>
+                        </div>
+                        <div style="clear: left;"></div>
                     </div>
                     <div class="form_row">
                         <div class="form_area">
@@ -163,6 +167,10 @@
                 </div>
             </div>
         </form>
+        <div id="submit">
+            <span>
+                <a href="#" id="sub_button">提交</a></span>
+        </div>
     </div>
     </div>
 </div>

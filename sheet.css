@@ -310,3 +310,11 @@ input{
     /*-webkit-margin-start: 0px;*/
     /*-webkit-margin-end: 0px;*/
 /*}*/
+#submit span{
+    padding: 0 15px;
+    font-size: 15px;
+    line-height: 30px;
+    border-radius: 2px;
+    display: block;
+    background: transparent;
+}
