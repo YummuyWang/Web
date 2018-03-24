@@ -32,5 +32,4 @@ function checkEmailAddress() {
 var button = document.getElementById("sub_button");
 button.onclick=function () {
     checkEmailAddress();
-    checkPasswordAbility();
-}
+    checkPasswordAbility();}
