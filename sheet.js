@@ -19,7 +19,6 @@ function checkNameAbility() {
             passwordCheck.value = "密码格式不正确请重新输入";
         }
     }
-}
 function checkEmailAddress() {
     if(!document.getElementById) return false;
     if(!document.getElementById("email")) return false;
@@ -29,8 +28,9 @@ function checkEmailAddress() {
     var emailReg = /^[a-zA-Z_\.-]+@[a-zA-z\._-]+(\.[a-zA-Z_]+)+$/;
     if(email.value.match(emailReg)&&email.value===reenterEmail.value) alert("注册成功");
 }
+
 var button = document.getElementById("sub_button");
 button.onclick=function () {
     checkEmailAddress();
-    
+    checkPasswordAbility();
 }
