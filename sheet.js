@@ -1,13 +1,14 @@
 function checkNameAbility() {
-    if(!document.getElementById) return false;
+    if (!document.getElementById) return false;
     if (!document.getElementById("account_availability")) return false;
     var check_acc = document.getElementById("check_account");
     var acc_abil = document.getElementById("account_availability");
     var accName = document.getElementById("accountname");
     var nameReg = /^[a-zA-Z_]\w+$/;
-    if(accName.value.match(nameReg)){
-        acc_abil.setAttribute("style","display:inline-block");
+    if (accName.value.match(nameReg)) {
+        acc_abil.setAttribute("style", "display:inline-block");
     }
+}
     function checkPasswordAbility() {
         if(!document.getElementById) return false;
         if(!document.getElementById("password")) return false;
